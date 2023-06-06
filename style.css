@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 2rem auto;
+}
+
+.title-details {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 10rem;
+  position: relative;
+}
+
+.title {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 4rem;
+}
+
+.navbar {
+  flex-basis: 25rem;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+}
