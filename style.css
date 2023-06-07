@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;400;600;900&display=swap');
+
+/* global styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Geologica', sans-serif;
 }
 
 ul li {
@@ -10,14 +17,45 @@ ul li {
 
 a {
   text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
 }
+
+.caps {
+  text-transform: capitalize;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.btn {
+  border: none;
+  padding: 0.8rem 4rem;
+  background: transparent;
+}
+
+/* hero section */
+
+.hero--section {
+  /* height: 100vh; */
+}
+
+.hero {
+  height: 100vh;
+  padding: 4rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assets/banner.png) center/cover no-repeat fixed;
+}
+
+/* nav-bar */
 
 .title-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1440px;
-  margin: 2rem auto;
+  /* margin: 2rem auto; */
 }
 
 .title-details {
@@ -31,17 +69,87 @@ a {
   position: relative;
 }
 
-.title {
+/* .title {
   font-size: 1.5rem;
   position: absolute;
   left: 4rem;
-}
+} */
 
-.navbar {
+.nav-links {
   flex-basis: 25rem;
+  transition: all 10s 0.2s;
 }
 
-.navbar ul {
+.nav-links ul {
   display: flex;
   justify-content: space-around;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid red;
+}
+
+/* hero description */
+
+.main {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50rem;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.main-title {
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  margin: 2rem 0;
+  /* color: #fff; */
+}
+
+.main-desc {
+  font-weight: 100;
+  text-align: center;
+}
+
+.btn-visit {
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 0.8rem;
+  margin-top: 2rem;
+}
+
+.btn-visit {
+  position: relative;
+  transition: all 1s 0.2s;
+}
+
+.btn-visit:hover {
+  background: red;
+}
+
+.btn-visit::before {
+  content: '____';
+  position: absolute;
+  left: -0.7rem;
+  top: 0.2rem;
+  transition: all 1s 0.2s;
+}
+
+.btn-visit:hover::before {
+  color: red;
+}
+
+.btn-visit::after {
+  content: '____';
+  position: absolute;
+  right: -0.7rem;
+  top: 0.2rem;
+  transition: all 1s 0.2s;
+}
+
+.btn-visit:hover::after {
+  color: red;
 }
