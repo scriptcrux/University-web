@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;400;600;900&display=swap');
 
-/* global styles */
+/*
+
+global styles
+
+*/
 * {
   margin: 0;
   padding: 0;
@@ -48,7 +52,11 @@ a {
     url(./assets/banner.png) center/cover no-repeat fixed;
 }
 
-/* nav-bar */
+/* 
+
+nav-bar 
+
+*/
 
 .title-header {
   display: flex;
@@ -89,7 +97,11 @@ a {
   border-bottom: 2px solid red;
 }
 
-/* hero description */
+/* 
+
+hero description
+
+*/
 
 .main {
   height: 60vh;
@@ -152,4 +164,244 @@ a {
 
 .btn-visit:hover::after {
   color: red;
+}
+
+/*
+
+courses
+
+
+*/
+
+.courses {
+  max-width: 1440px;
+  text-align: center;
+  margin: 5rem auto;
+}
+
+.courses-header h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 0.7rem;
+}
+
+.courses-header p {
+  font-weight: 100;
+}
+
+.course-list {
+  margin: 4rem 0;
+  display: flex;
+  justify-content: space-around;
+  /* row-gap: 4rem; */
+}
+
+.course {
+  flex-basis: 24rem;
+  background: rgb(226, 209, 214);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.course-name {
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.course-desc {
+  font-weight: 100;
+}
+
+/*  
+
+offices
+
+
+*/
+
+.offices {
+  max-width: 1440px;
+  text-align: center;
+  margin: 5rem auto;
+}
+
+.offices-header h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 0.7rem;
+}
+
+.offices-header p {
+  font-weight: 100;
+}
+
+.office-list {
+  margin: 4rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.office {
+  position: relative;
+  flex-basis: 27rem;
+}
+
+.office-location {
+  position: absolute;
+  bottom: 0%;
+  left: 10rem;
+  /* transform: translate(-50%, -50%); */
+  color: transparent;
+}
+
+.office:hover {
+  background-color: rgba(255, 0, 0, 0.4);
+  border-radius: 1rem;
+}
+
+.office:hover .office-location {
+  /* animation: move 5s 1;
+  animation-fill-mode: forwards; */
+  color: #fff;
+  transform: translateY(-20rem);
+}
+
+/* @keyframes move {
+  0% {
+    color: #fff;
+    transform: translateY(0);
+  }
+  100% {
+    color: #fff;
+    transform: translateY(-20rem);
+  }
+  100% {
+    transform: translateY(0rem);
+    color: transparent;
+  }
+} */
+
+.office-img {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 1rem;
+  z-index: -1;
+}
+
+/* 
+
+Facilities 
+
+*/
+
+.facilites {
+  max-width: 1440px;
+
+  margin: 5rem auto;
+}
+
+.facilites-header {
+  text-align: center;
+}
+
+.facilites-header h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 0.7rem;
+}
+
+.facilites-header p {
+  font-weight: 100;
+}
+
+.facility-list {
+  margin: 4rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.facility {
+  position: relative;
+  flex-basis: 27rem;
+}
+
+.facility-type {
+  text-align: start;
+  font-weight: 400;
+  margin: 0.9rem 0;
+}
+
+.facility-desc {
+  font-weight: 100;
+}
+
+.facility-img {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 1rem;
+  z-index: -1;
+}
+
+/*
+
+courses
+
+
+*/
+
+.feedbacks {
+  max-width: 1440px;
+
+  margin: 5rem auto;
+}
+
+.feedbacks-header h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 0.7rem;
+  text-align: center;
+}
+
+.feedbacks-header p {
+  font-weight: 100;
+  text-align: center;
+}
+
+.feedback-list {
+  margin: 4rem 0;
+  display: flex;
+  justify-content: space-around;
+  /* row-gap: 4rem; */
+}
+
+.feedback {
+  flex-basis: 45%;
+  background: rgb(226, 209, 214);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.feedback-details {
+  display: flex;
+  align-items: flex-start;
+}
+
+.feedback-img {
+  margin-right: 1rem;
+  position: relative;
+  width: 2rem;
+  object-fit: contain;
+  border-radius: 1rem;
+  /* z-index: -1; */
+}
+
+.feedback-name {
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+.feedback-desc {
+  font-weight: 100;
 }
