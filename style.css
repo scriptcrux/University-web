@@ -520,3 +520,93 @@ footer ul {
 footer li {
   margin-right: 1rem;
 }
+
+/* 
+about 
+
+*/
+
+.hero-section {
+  height: 58vh;
+  padding: 4rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assets/background.jpg) bottom/cover no-repeat fixed;
+}
+
+.main-heading {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+}
+
+.main-heading h1 {
+  font-weight: 400;
+}
+
+.about {
+  display: flex;
+  max-width: 1440px;
+  margin: 7rem auto;
+}
+
+.about-details {
+  padding: 0 3rem;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+.about-details {
+  flex: 1 0 45%;
+}
+
+.about-img {
+  flex: 0 1 45%;
+}
+
+.about-img img {
+  width: 85%;
+}
+
+.btn-about {
+  color: red;
+  border: 1px solid red;
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  position: relative;
+  transition: all 1s 0.2s;
+}
+
+.btn-about:hover {
+  background: red;
+  color: #fff;
+}
+
+.btn-about::before {
+  content: '____';
+  position: absolute;
+  left: -0.7rem;
+  top: 0.2rem;
+  transition: all 1s 0.2s;
+}
+
+.btn-about:hover::before {
+  color: red;
+}
+
+.btn-about::after {
+  content: '____';
+  position: absolute;
+  right: -0.7rem;
+  top: 0.2rem;
+  transition: all 1s 0.2s;
+}
+
+.btn-about:hover::after {
+  color: red;
+}
