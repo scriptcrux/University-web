@@ -610,3 +610,128 @@ about
 .btn-about:hover::after {
   color: red;
 }
+
+/* 
+
+Blog
+
+*/
+
+.blog {
+  display: flex;
+  max-width: 1440px;
+  margin: 7rem auto;
+}
+
+.blog-img {
+  flex: 0 1 70%;
+}
+
+.blog-img img {
+  width: 100%;
+}
+
+.blog-title {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 2rem 0;
+}
+
+.blog-desc p {
+  margin: 1rem 0;
+}
+
+.blog-details {
+  padding: 0 3rem;
+}
+
+.blog-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.blog-table td {
+  padding: 0.5rem 0;
+}
+
+.course-cap {
+  text-align: right;
+}
+
+.blog-details {
+  flex: 1 0 40%;
+}
+
+.blog-details h2 {
+  font-size: 1rem;
+  font-weight: 200;
+  text-align: center;
+  color: #fff;
+  background-color: red;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.user-form {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.user-form h2 {
+  margin-bottom: 1rem;
+}
+
+.form-input {
+  width: 100%;
+  border: none;
+  background: rgba(128, 128, 128, 0.1);
+  padding: 0.5rem 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+/* 
+
+Contact
+
+*/
+
+.contact {
+  display: flex;
+  max-width: 1440px;
+  margin: 7rem auto;
+}
+.contact-details {
+  flex-basis: 50%;
+}
+
+.user-form {
+  flex-basis: 50%;
+}
+
+.contact-form {
+  border: none;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-address {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-number {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-email {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
